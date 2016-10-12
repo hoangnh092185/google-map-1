@@ -9,12 +9,23 @@
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body class="container">
+      <div class="jumbotron">
+        <h1>Find a location by entering latitude and longitude!</h1>
+      </div>
+      <div class="jumbotron">
+        <label for="">Input latitude</label>
+        <input id="lat1"type="number" name="name" value="">
+        <label for="">input longitude</label>
+        <input id="lng1"type="number" name="name" value="">
+        <button class="btn btn-danger"id="locateUser">Get Location</button>
+      </div>
+      <div class="">
+        <label for="">Check out other cool locations</label>
+        <button class="btn btn-success"id="timberlineLodge">Timberline Lodge</button>
+        <button class="btn btn-info"id="thirdBeach">Strawberry Bay Falls</button>
+        <button class="btn btn-primary"id="oregonzoo">Oregon Zoo</button>
+      </div>
 
-      <label for="">Input latitude</label>
-      <input id="lat1"type="number" name="name" value="">
-      <label for="">input longitude</label>
-      <input id="lng1"type="number" name="name" value="">
-      <button id="locateUser">Get Location</button>
     <div id="map"></div>
   </body>
 </html>
