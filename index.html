@@ -1,27 +1,20 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <title>Geolocation and Google Maps API</title>
     <link rel="stylesheet" href="build/css/vendor.css">
-    <link rel="stylesheet" href="css/styles.css">
     <script src="build/js/vendor.min.js"></script>
     <script type="text/javascript" src="build/js/app.js"></script>
-    <title></title>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAU0xyUsAUaSfn-YG5VdACETAs0WsMHlfI"></script>
+    <link rel="stylesheet" href="css/styles.css">
   </head>
-  <body>
-    <div class="container">
-      <div class="jumbotron">
-        <form>
-          <label for="">Number of paragraph</label>
-          <input id="paragraph"type="number" name="name" value="">
-          <label for="">Number of words in a paragraph</label>
-          <input id="words"type="number" name="name" value="">
-          <button id="dino-input" type="submit" name="button">Dyno Time!</button>
-        </form>
-      </div>
-      <div class="jumbotron">
-        <p id="dyno-texter"></p>
-      </div>
-    </div>
+  <body class="container">
+
+      <label for="">Input latitude</label>
+      <input id="lat1"type="number" name="name" value="">
+      <label for="">input longitude</label>
+      <input id="lng1"type="number" name="name" value="">
+      <button id="locateUser">Get Location</button>
+    <div id="map"></div>
   </body>
 </html>
