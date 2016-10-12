@@ -1,9 +1,24 @@
+
+
 $( document ).ready(function() {
   $('#locateUser').click(initiateMap);
   $('#timberlineLodge').click(timberline);
   $('#thirdBeach').click(trailHead);
   $('#oregonzoo').click(oregonZoo);
+  $('#test').click(initMap);
 });
+
+function initMap() {
+       // Create a map object and specify the DOM element for display.
+       var map = new google.maps.Map(document.getElementById('map'), {
+         center: {lat: -34.397, lng: 150.644},
+         scrollwheel: false,
+         zoom: 8
+       });
+     }
+
+
+
 
 // Here is the info for Oregon Zoo
 function oregonZoo(){
@@ -29,6 +44,8 @@ function oregonZoo(){
 
 // Here is the info for third Beach Trailhead
 function trailHead(){
+
+
   var lat1 = 47.8839336;
   var lng1 = -124.6008238;
 
@@ -46,7 +63,6 @@ function trailHead(){
     map: mapObject,
     position: userLatLng
   });
-
 }
 
 // Here is the info for timberline lodge

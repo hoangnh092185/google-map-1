@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Geolocation and Google Maps API</title>
+    <title>Find a Location</title>
     <link rel="stylesheet" href="build/css/vendor.css">
     <script src="build/js/vendor.min.js"></script>
     <script type="text/javascript" src="build/js/app.js"></script>
@@ -10,22 +10,23 @@
   </head>
   <body class="container">
       <div class="jumbotron">
-        <h1>Find a location by entering latitude and longitude!</h1>
+        <h1>Find a Location</h1>
       </div>
       <div class="jumbotron">
-        <label for="">Input latitude</label>
+        <h3>Find a location by entering the latitude and longitude!</h3>
+        <label for="">Input latitude:</label>
         <input id="lat1"type="number" name="name" value="">
-        <label for="">input longitude</label>
+        <label for="">Input longitude:</label>
         <input id="lng1"type="number" name="name" value="">
         <button class="btn btn-danger"id="locateUser">Get Location</button>
       </div>
       <div class="">
-        <label for="">Check out other cool locations</label>
+        <label id="checkout">Check out other cool locations:</label>
         <button class="btn btn-success"id="timberlineLodge">Timberline Lodge</button>
         <button class="btn btn-info"id="thirdBeach">Strawberry Bay Falls</button>
         <button class="btn btn-primary"id="oregonzoo">Oregon Zoo</button>
+        <button class="btn btn-primary"id="test">Test</button>
       </div>
-
     <div id="map"></div>
   </body>
 </html>
